@@ -1,0 +1,551 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #d8c39a;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   MAIN POSTER
+========================= */
+
+.poster {
+
+    width: 600px;
+
+    min-height: 1000px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 50px 35px 35px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            #fff8e6,
+            #f5dfb0
+        );
+
+    border: 5px solid #c99a35;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+}
+
+
+/* =========================
+   RIBBON
+========================= */
+
+.ribbon {
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 25px;
+
+    background: #c81717;
+
+    top: 25px;
+
+}
+
+
+.ribbon-left {
+
+    left: -45px;
+
+    transform: rotate(-25deg);
+
+}
+
+
+.ribbon-right {
+
+    right: -45px;
+
+    transform: rotate(25deg);
+
+}
+
+
+/* =========================
+   CHICKEN IMAGE
+========================= */
+
+.chicken {
+
+    position: absolute;
+
+    width: 170px;
+
+    height: 170px;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            5px 8px 5px
+            rgba(0, 0, 0, 0.25)
+        );
+
+}
+
+
+.chicken-left {
+
+    left: -20px;
+
+    top: 100px;
+
+    transform: rotate(-15deg);
+
+}
+
+
+.chicken-right {
+
+    right: -20px;
+
+    top: 130px;
+
+    transform: rotate(15deg);
+
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 40px;
+
+}
+
+
+/* Big M */
+
+.logo-icon {
+
+    width: 120px;
+
+    height: 120px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #c81717;
+
+    color: white;
+
+    font-size: 80px;
+
+    font-weight: bold;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+/* Mallai */
+
+.logo h1 {
+
+    margin-top: 5px;
+
+    font-size: 65px;
+
+    color: #c81717;
+
+    font-weight: 900;
+
+    letter-spacing: -3px;
+
+}
+
+
+/* Fried Chicken */
+
+.logo h2 {
+
+    margin-top: -5px;
+
+    font-size: 21px;
+
+    color: #df541b;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* =========================
+   TAGLINE
+========================= */
+
+.tagline {
+
+    margin-top: 35px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #512b20;
+
+}
+
+
+.tagline span {
+
+    color: #c81717;
+
+    font-size: 30px;
+
+    margin: 0 8px;
+
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+
+    margin-top: 25px;
+
+    color: #4b2920;
+
+    line-height: 1.7;
+
+    font-size: 18px;
+
+}
+
+
+.description h3 {
+
+    margin: 8px 0;
+
+    color: #c81717;
+
+    font-size: 24px;
+
+}
+
+
+/* =========================
+   GRAND OPENING
+========================= */
+
+.special {
+
+    margin-top: 25px;
+
+    padding: 16px 10px;
+
+    background: #b81212;
+
+    border: 5px solid #d2a139;
+
+    border-radius: 12px;
+
+    color: #ffd84a;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 5px 10px
+        rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.details {
+
+    margin-top: 25px;
+
+    color: #4b2920;
+
+}
+
+
+.details h3 {
+
+    color: #c81717;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.details p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+.welcome {
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   OFFER
+========================= */
+
+.offer {
+
+    margin-top: 30px;
+
+    padding: 15px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #a80f0f,
+            #e32b17,
+            #a80f0f
+        );
+
+    border: 4px solid #d49c29;
+
+    color: white;
+
+    box-shadow:
+        0 5px 10px
+        rgba(0, 0, 0, 0.25);
+
+}
+
+
+/* Opening special */
+
+.offer-small {
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* 15% OFF */
+
+.offer-big {
+
+    margin-top: 5px;
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+}
+
+
+.offer-big span {
+
+    color: #ffd83d;
+
+    font-size: 55px;
+
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: 3px solid #d2a139;
+
+    background: #fff5d9;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    color: #4b2920;
+
+    font-size: 17px;
+
+}
+
+
+.line {
+
+    width: 2px;
+
+    height: 25px;
+
+    background: #8c6b28;
+
+}
+
+
+/* =========================
+   PHONE
+========================= */
+
+.phone {
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border-radius: 40px;
+
+    background: #bd1515;
+
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 5px 10px
+        rgba(0, 0, 0, 0.25);
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    body {
+
+        padding: 10px;
+
+    }
+
+    .poster {
+
+        width: 100%;
+
+        min-height: 900px;
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+
+    }
+
+    .chicken {
+
+        width: 110px;
+
+        height: 110px;
+
+    }
+
+    .logo h1 {
+
+        font-size: 50px;
+
+    }
+
+    .tagline {
+
+        font-size: 17px;
+
+    }
+
+    .description {
+
+        font-size: 16px;
+
+    }
+
+    .special {
+
+        font-size: 22px;
+
+    }
+
+    .offer-big {
+
+        font-size: 28px;
+
+    }
+
+    .phone {
+
+        font-size: 24px;
+
+    }
+
+}
